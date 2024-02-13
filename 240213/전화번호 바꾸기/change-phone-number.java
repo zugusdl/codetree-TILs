@@ -6,9 +6,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String con = "-";
         sc.useDelimiter(con);
-        String a = sc.next();
+        int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        System.out.print(a + con + c + con + b);
+        System.out.print("0" + a + con + c + con + b);
     }
 }
