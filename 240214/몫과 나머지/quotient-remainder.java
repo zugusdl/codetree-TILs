@@ -6,6 +6,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.print((a/b) + "..." + (a%b));
+        int i = a/b;
+        int j = a%b;
+        System.out.print(i + "..." + j);
     }
 }
