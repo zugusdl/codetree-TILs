@@ -7,6 +7,7 @@ public class Main {
         int count = 1;
         for(double i = 0; count <= 5; count++) {
             i = sc.nextDouble();
+            i = Math.round(i * 1000.0) / 1000.0;
             System.out.printf("%.3f\n", i);
         }
     }
