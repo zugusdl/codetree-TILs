@@ -18,6 +18,8 @@ public class Main {
 
         if(count >= 2) {
             System.out.print("E");
+        } else {
+            System.out.print("N");
         }
 
         
