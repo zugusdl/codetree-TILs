@@ -11,10 +11,8 @@ public class Main {
 
         if(aMath > bMath) {
             System.out.print("A");
-        } else if(aMath == bMath) {
-            if(aEng > bEng) {
+        } else if((aMath == bMath) && (aEng > bEng)) {
                 System.out.print("A");
-            }
         } else {
             System.out.print("B");
         }
