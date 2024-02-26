@@ -7,8 +7,7 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        int result = a/b;
-        System.out.print(result+".");
+        System.out.print((a / b) + ".");
 
         a %= b;
 
