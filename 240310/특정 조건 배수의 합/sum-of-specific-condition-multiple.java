@@ -8,7 +8,7 @@ public class Main {
         int b = sc.nextInt();
         int sum = 0;
 
-        for(int i = a; i <= b; i++) {
+        for(int i = Math.min(a, b); i <= Math.max(a, b); i++) {
             if(i % 5 == 0) sum += i;
         }
 
