@@ -11,10 +11,10 @@ public class Main {
             int n = sc.nextInt();
 
             if(n >= 30 || n <= 19) {
-                System.out.printf("%.2f", (double)sum / cnt)
+                System.out.printf("%.2f", (double)sum / cnt);
                 break;
             }
-            
+
             sum += n;
             cnt++;
         }
