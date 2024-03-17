@@ -8,7 +8,7 @@ public class Main {
         int prod = 2;
         int x = 1;
         while(true) {
-            if(x == n) {
+            if(prod == n) {
                 System.out.print(x);
                 break;
             }
