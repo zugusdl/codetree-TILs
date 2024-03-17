@@ -5,15 +5,15 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int x = 2;
-        int cnt = 1;
+        int prod = 2;
+        int x = 1;
         while(true) {
             if(x == n) {
-                System.out.print(cnt);
+                System.out.print(x);
                 break;
             }
-            x *= 2;
-            cnt++;
+            prod *= 2;
+            x++;
         }
     }
 }
