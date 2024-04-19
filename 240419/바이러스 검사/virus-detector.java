@@ -19,9 +19,11 @@ public class Main {
         for(int i = 0; i < arr.length; i++) {
             answer += 1; // 팀장 더하기
             arr[i] -= leader; // 팀장 고객 수 빼기
-
-            double m = Math.ceil((double)arr[i] / member);
-            answer += m;
+            
+            if(arr[i] > 0) {
+                double m = Math.ceil((double)arr[i] / member);
+                answer += m;
+            }
         }
 
         System.out.print(answer);
