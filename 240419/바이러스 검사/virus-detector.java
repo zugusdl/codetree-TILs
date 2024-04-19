@@ -21,8 +21,7 @@ public class Main {
             arr[i] -= leader; // 팀장 고객 수 빼기
             
             if(arr[i] > 0) {
-                double m = Math.ceil((double)arr[i] / member);
-                answer += m;
+                answer += Math.ceil((double)arr[i] / member);
             }
         }
 
