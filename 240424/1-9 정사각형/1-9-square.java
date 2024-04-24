@@ -10,7 +10,9 @@ public class Main {
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 System.out.print(cnt);
-                cnt = (cnt != 9) ? cnt + 1 : 1;
+                cnt++;
+                if(cnt == 10)
+                    cnt = 1;
             }
             System.out.println();
         }
