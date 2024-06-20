@@ -6,24 +6,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         char ch = 'A';
-        int cnt = 0;
 
         for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
-
-                if(cnt < i) {
-                    System.out.print("  ");
-                    cnt++;
-                } else {
-                    System.out.print(ch + " ");
-                    ch++;
-                }
-
-                if(ch > 'Z') {
-                    ch = 'A';
-                }
+            for(int j = 0; j < i; j++) {
+                System.out.print("  ");
             }
-            cnt = 0;
+                
+            for(int j = 0; j < n - i; j++) {
+                System.out.print(ch + " ");
+                ch++;
+                if(ch > 'Z')
+                    ch = 'A';
+            }
+            
             System.out.println();
         }
     }
