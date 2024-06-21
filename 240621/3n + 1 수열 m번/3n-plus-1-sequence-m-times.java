@@ -10,14 +10,13 @@ public class Main {
             int n = sc.nextInt();
             int cnt = 0;
 
-            for(int j = n; j != 1;) {
-                if(j % 2 == 0) {
-                    j /= 2;
-                    cnt++;
-                } else {
-                    j = (j * 3) + 1;
-                    cnt++;
-                }
+            while(n != 1) {
+                if(n % 2 == 0)
+                    n /= 2;
+                else
+                    n = n * 3 + 1;
+                
+                cnt++;
             }
 
             System.out.println(cnt);
