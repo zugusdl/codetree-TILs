@@ -7,7 +7,6 @@ public class Main {
         int n = sc.nextInt();
         double[] arr = new double[n];
         double sum = 0;
-        String grade;
 
         for(int i = 0; i < n; i++) {
             arr[i] = sc.nextDouble();
@@ -18,14 +17,16 @@ public class Main {
         }
 
         double avg = sum / n;
-        if(avg >= 4.0) {
-            grade = "Perfect";
-        } else if (avg >= 3.0) {
-            grade = "Good";
-        } else {
-            grade = "Poor";
-        }
+        System.out.printf("%.1f\n", avg);
 
-        System.out.printf("%.1f\n%s", avg, grade);
+        if(avg >= 4.0) {
+            System.out.println("Perfect");
+        }
+        else if(avg >= 3.0) {
+            System.out.println("Good");
+        }
+        else {
+            System.out.println("Poor");
+        }
     }
 }
