@@ -5,21 +5,18 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[10];
+        int cnt = 0;
 
         for(int i = 0; i < 10; i++) {
-            int j = sc.nextInt();
-            if(j == 0) {
+            arr[i] = sc.nextInt();
+            if(arr[i] == 0) {
                 break;
             }
-            arr[i] = j;
+            cnt++;
         }
 
-        for(int i = 9; i >= 0; i--) {
-            if(arr[i] == 0) {
-                continue;
-            } else {
-                System.out.print(arr[i] + " ");
-            }
+        for(int i = cnt - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
         }
     }
 }
