@@ -15,6 +15,6 @@ public class Main {
             sum += score;
         }
 
-        System.out.print(sum / 8);
+        System.out.printf("%.1f", sum / 8);
     }
 }
