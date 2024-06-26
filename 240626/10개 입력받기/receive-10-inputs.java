@@ -13,11 +13,8 @@ public class Main {
             if(arr[i] == 0) {
                 break;
             }
-            cnt++;
-        }
-
-        for(int i = 0; i < cnt; i++) {
             sum += arr[i];
+            cnt++;
         }
 
         System.out.printf("%d %.1f", sum, (double) sum / cnt);
