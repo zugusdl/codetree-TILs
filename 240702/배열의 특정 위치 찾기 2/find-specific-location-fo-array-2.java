@@ -17,7 +17,7 @@ public class Main {
                 even += arr[i];
             }
         }
-        
-        System.out.print(Math.max(odd, even) - Math.min(odd, even));
+
+        System.out.print(odd > even ? odd - even : even - odd);
     }
 }
