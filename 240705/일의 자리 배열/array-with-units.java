@@ -10,10 +10,7 @@ public class Main {
             if(i < 2) {
                 arr[i] = sc.nextInt();
             } else {
-                arr[i] = arr[i - 1] + arr[i - 2];
-                if(arr[i] >= 10) {
-                    arr[i] -= 10;
-                }
+                arr[i] = (arr[i - 1] + arr[i - 2]) % 10;
             }
 
             System.out.print(arr[i] + " ");
